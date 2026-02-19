@@ -13,6 +13,7 @@ In these exercises we will be examining the following design patterns:
 ------
 
 ### Factory Method
+[//]: # (Hides use of new keyword)
 
 The *Factory Method* pattern gives us a way to encapsulate the instantiations of concrete types; 
 it encapsulates the functionality required to select and instantiate an appropriate class, inside a designated method 
