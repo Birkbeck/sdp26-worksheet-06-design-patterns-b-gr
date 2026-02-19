@@ -1,8 +1,34 @@
 package singleton;
 
 public class SingletonProtected {
-    public static SingletonProtected getInstance() {
-        // TODO: implement Singleton
-        return null;
+    private static final SingletonProtected instance = new SingletonProtected();
+
+
+    private SingletonProtected() {
     }
+
+    public static SingletonProtected getInstance() {
+        return instance;
+    }
+
+
 }
+
+
+/*
+//OR
+
+
+
+private SingletonProtected() {
+}
+
+public static SingletonProtected getInstance() {
+    return Instance.INSTANCE;
+}
+
+private static class Instance {
+    public static final SingletonProtected INSTANCE = new SingletonProtected();
+}
+}
+*/
